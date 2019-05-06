@@ -1,0 +1,30 @@
+/*div{
+    border: 1px solid black;
+}*/
+
+.divText{
+    width: "300px%";
+    background-color:white;
+}
+
+#textSise1{
+    width: 50%;
+}
+
+.bg-white{
+    background-color:white;
+    color: black;
+}
+.bg-black{
+    background-color:black;
+    color: white;
+}
+
+#mainBody{
+    height: 650px;
+    background-image: url(../../../pict/bg/hand.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    
+
+}

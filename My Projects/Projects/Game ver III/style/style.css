@@ -1,0 +1,38 @@
+/*div{
+    border: 1px solid red;
+}*/
+
+.btnLine{
+    height: 100px;
+}
+
+.numLine{
+    height: 100px; 
+}
+
+.scrLine{
+    height: 100px; 
+}
+
+#input525{
+    border: 1px solid blue;
+    width: 80%;
+}
+
+#divMain{
+    background-image: url(../../../pict/bg/maxresdefault.jpg)
+}
+
+.btnColor{
+    background-color: white;
+    border: 0px solid red;
+
+}
+
+#row1{
+    height: 100px;
+}
+
+#row3{
+    height: 100px;
+}

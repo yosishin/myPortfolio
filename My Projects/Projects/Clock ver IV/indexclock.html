@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="script/script.js"></script>
+  <link rel="stylesheet" href="style/style.css">
+  <title>Clock</title>
+</head>
+
+<body onload="startTime()">
+  <h1>Digital Clock</h1>
+  <hr/>
+  <input id="inputColor"  type="color"/>
+  <button onclick="changColor()" >change color timer</button>
+  <hr/>
+  <h2 id="time1"></h2>
+  <main>
+
+    <section class="container shadow-lg ">
+      <div class="container">
+        <div class="row" class=""></div>
+        <br>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="row">
+              <div class="col-md-6">
+                  <div id="div211" class="row">
+                      <div class="col-md-3 dlgts">
+                        <div id="div2111" class="lgts"></div>
+                      </div>
+                      <div class="col-md-5 dlgthz">
+                        <div id="div2112" class=" lgthz"></div>
+                      </div>
+                      <div class="col-md-3 dlgts">
+                        <div id="div2113" class="lgts"></div>
+                      </div>
+                    </div>
+                    <div id="div211" class="row">
+                      <div class="col-md-3 dlgtve">
+                        <div id="div2121" class="lgtve"></div>
+                      </div>
+                      <div class="col-md-5 dlgtmp">
+                        <div id="div2122" class="lgtmp"></div>
+                      </div>
+                      <div class="col-md-3 dlgtve">
+                        <div id="div2123" class="lgtve"></div>
+                      </div>
+                    </div>
+                    <div id="div211" class="row">
+                      <div class="col-md-3 dlgts">
+                        <div id="div2131" class="lgts"></div>
+                      </div>
+                      <div class="col-md-5 dlgthz">
+                        <div id="div2132" class="lgthz"></div>
+                      </div>
+                      <div class="col-md-3 dlgts">
+                        <div id="div2133" class="lgts"></div>
+                      </div>
+                    </div>
+                    <div id="div211" class="row">
+                      <div class="col-md-3 dlgtve">
+                        <div id="div2141" class="lgtve"></div>
+                      </div>
+                      <div class="col-md-5 dlgtmp">
+                        <div id="div2142" class="lgtmp"></div>
+                      </div>
+                      <div class="col-md-3 dlgtve">
+                        <div id="div2143" class="lgtve"></div>
+                      </div>
+                    </div>
+                    <div id="div211" class="row">
+                      <div class="col-md-3 dlgts">
+                        <div id="div2151" class="lgts"></div>
+                      </div>
+                      <div class="col-md-5 dlgthz">
+                        <div id="div2152" class="lgthz"></div>
+                      </div>
+                      <div class="col-md-3 dlgts">
+                        <div id="div2153" class="lgts"></div>
+                      </div>
+                    </div>
+              </div>
+              <div class="col-md-6">
+                  <div id="div221" class="row">
+                      <div class="col-md-3 dlgts">
+                        <div id="div2211" class="lgts"></div>
+                      </div>
+                      <div class="col-md-5 dlgthz">
+                        <div id="div2212" class="lgthz"></div>
+                      </div>
+                      <div class="col-md-3 dlgts">
+                        <div id="div2213" class="lgts"></div>
+                      </div>
+                    </div>
+                    <div id="div222" class="row">
+                      <div class="col-md-3 dlgtve">
+                        <div id="div2221" class="lgtve"></div>
+                      </div>
+                      <div class="col-md-5 dlgtmp">
+                        <div id="div2222" class="lgtmp"></div>
+                      </div>
+                      <div class="col-md-3 dlgtve">
+                        <div id="div2223" class="lgtve"></div>
+                      </div>
+                    </div>
+                    <div id="div223" class="row">
+                      <div class="col-md-3 dlgts">
+                        <div id="div2231" class="lgts"></div>
+                      </div>
+                      <div class="col-md-5 dlgthz">
+                        <div id="div2232" class="lgthz"></div>
+                      </div>
+                      <div class="col-md-3 dlgts">
+                        <div id="div2233" class="lgts"></div>
+                      </div>
+                    </div>
+                    <div id="div224" class="row">
+                      <div class="col-md-3 dlgtve">
+                        <div id="div2241" class="lgtve"></div>
+                      </div>
+                      <div class="col-md-5 dlgtmp">
+                        <div id="div2242" class="lgtmp"></div>
+                      </div>
+                      <div class="col-md-3 dlgtve">
+                        <div id="div2243" class="lgtve"></div>
+                      </div>
+                    </div>
+                    <div id="div225" class="row">
+                      <div class="col-md-3 dlgts">
+                        <div id="div2251" class="lgts"></div>
+                      </div>
+                      <div class="col-md-5 dlgthz">
+                        <div id="div2252" class="lgthz"></div>
+                      </div>
+                      <div class="col-md-3 dlgts">
+                        <div id="div2253" class="lgts"></div>
+                      </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1">
+            <div class="row justify-content-center">
+              <div class="col-md-4 dlgts ">
+                <div id="div7311" class=""></div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-4 dlgtve">
+                <div id="div7312" class="lgtve"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 dlgts">
+                <div id="div7313" class=""></div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-4 dlgtve">
+                <div id="div7314" class="lgtve"></div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-4 dlgts">
+                <div id="div4315" class=""></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="row">
+              <div class="col-md-6"><div id="div231" class="row">
+                  <div class="col-md-3 dlgts">
+                    <div id="div2311" class="lgts"></div>
+                  </div>
+                  <div class="col-md-5 dlgthz">
+                    <div id="div2312" class="lgthz"></div>
+                  </div>
+                  <div class="col-md-3 dlgts">
+                    <div id="div2313" class="lgts"></div>
+                  </div>
+                </div>
+                <div id="div232" class="row">
+                  <div class="col-md-3 dlgtve">
+                    <div id="div2321" class="lgtve"></div>
+                  </div>
+                  <div class="col-md-5 dlgtmp">
+                    <div id="div2322" class="lgtmp"></div>
+                  </div>
+                  <div class="col-md-3 dlgtve">
+                    <div id="div2323" class="lgtve"></div>
+                  </div>
+                </div>
+                <div id="div233" class="row">
+                  <div class="col-md-3 dlgts">
+                    <div id="div2331" class="lgts"></div>
+                  </div>
+                  <div class="col-md-5 dlgthz">
+                    <div id="div2332" class="lgthz"></div>
+                  </div>
+                  <div class="col-md-3 dlgts">
+                    <div id="div2333" class="lgts"></div>
+                  </div>
+                </div>
+                <div id="div234" class="row">
+                  <div class="col-md-3 dlgtve">
+                    <div id="div2341" class="lgtve"></div>
+                  </div>
+                  <div class="col-md-5 dlgtmp">
+                    <div id="div2342" class="lgtmp"></div>
+                  </div>
+                  <div class="col-md-3 dlgtve">
+                    <div id="div2343" class="lgtve"></div>
+                  </div>
+                </div>
+                <div id="div235" class="row">
+                  <div class="col-md-3 dlgts">
+                    <div id="div2351" class="lgts"></div>
+                  </div>
+                  <div class="col-md-5 dlgthz">
+                    <div id="div2352" class="lgthz"></div>
+                  </div>
+                  <div class="col-md-3 dlgts">
+                    <div id="div2353" class="lgts"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">    <div id="div241" class="row">
+                  <div class="col-md-3 dlgts">
+                    <div id="div2411" class="lgts"></div>
+                  </div>
+                  <div class="col-md-5 dlgthz">
+                    <div id="div2412" class="lgthz"></div>
+                  </div>
+                  <div class="col-md-3 dlgts">
+                    <div id="div2413" class="lgts"></div>
+                  </div>
+                </div>
+                <div id="div242" class="row">
+                  <div class="col-md-3 dlgtve">
+                    <div id="div2421" class="lgtve"></div>
+                  </div>
+                  <div class="col-md-5 dlgtmp">
+                    <div id="div2422" class="lgtmp"></div>
+                  </div>
+                  <div class="col-md-3 dlgtve">
+                    <div id="div2423" class="lgtve"></div>
+                  </div>
+                </div>
+                <div id="div243" class="row">
+                  <div class="col-md-3 dlgts">
+                    <div id="div2431" class="lgts"></div>
+                  </div>
+                  <div class="col-md-5 dlgthz">
+                    <div id="div2432" class="lgthz"></div>
+                  </div>
+                  <div class="col-md-3 dlgts">
+                    <div id="div2433" class="lgts"></div>
+                  </div>
+                </div>
+                <div id="div244" class="row">
+                  <div class="col-md-3 dlgtve">
+                    <div id="div2441" class="lgtve"></div>
+                  </div>
+                  <div class="col-md-5 dlgtmp">
+                    <div id="div2442" class="lgtmp"></div>
+                  </div>
+                  <div class="col-md-3 dlgtve">
+                    <div id="div2443" class="lgtve"></div>
+                  </div>
+                </div>
+                <div id="div245" class="row">
+                  <div class="col-md-3 dlgts">
+                    <div id="div2451" class="lgts"></div>
+                  </div>
+                  <div class="col-md-5 dlgthz">
+                    <div id="div2452" class="lgthz"></div>
+                  </div>
+                  <div class="col-md-3 dlgts">
+                    <div id="div2453" class="lgts"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1">
+            <div class="row justify-content-center">
+              <div class="col-md-4 dlgts ">
+                <div id="div8311" class=""></div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-4 dlgtve">
+                <div id="div8312" class="lgtve"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 dlgts">
+                <div id="div8313" class=""></div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-4 dlgtve">
+                <div id="div8314" class="lgtve"></div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-4 dlgts">
+                <div id="div8315" class=""></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="row">
+              <div class="col-md-6">     <div id="div251" class="row">
+                  <div class="col-md-3 dlgts">
+                    <div id="div2511" class="lgts"></div>
+                  </div>
+                  <div class="col-md-5 dlgthz">
+                    <div id="div2512" class="lgthz"></div>
+                  </div>
+                  <div class="col-md-3 dlgts">
+                    <div id="div2513" class="lgts"></div>
+                  </div>
+                </div>
+                <div id="div252" class="row">
+                  <div class="col-md-3 dlgtve">
+                    <div id="div2521" class="lgtve"></div>
+                  </div>
+                  <div class="col-md-5 dlgtmp">
+                    <div id="div2522" class="lgtmp"></div>
+                  </div>
+                  <div class="col-md-3 dlgtve">
+                    <div id="div2523" class="lgtve"></div>
+                  </div>
+                </div>
+                <div id="div253" class="row">
+                  <div class="col-md-3 dlgts">
+                    <div id="div2531" class="lgts"></div>
+                  </div>
+                  <div class="col-md-5 dlgthz">
+                    <div id="div2532" class="lgthz"></div>
+                  </div>
+                  <div class="col-md-3 dlgts">
+                    <div id="div2533" class="lgts"></div>
+                  </div>
+                </div>
+                <div id="div254" class="row">
+                  <div class="col-md-3 dlgtve">
+                    <div id="div2541" class="lgtve"></div>
+                  </div>
+                  <div class="col-md-5 dlgtmp">
+                    <div id="div2542" class="lgtmp"></div>
+                  </div>
+                  <div class="col-md-3 dlgtve">
+                    <div id="div2543" class="lgtve"></div>
+                  </div>
+                </div>
+                <div id="div255" class="row">
+                  <div class="col-md-3 dlgts">
+                    <div id="div2551" class="lgts"></div>
+                  </div>
+                  <div class="col-md-5 dlgthz">
+                    <div id="div2552" class="lgthz"></div>
+                  </div>
+                  <div class="col-md-3 dlgts">
+                    <div id="div2553" class="lgts"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                  <div id="div261" class="row">
+                      <div class="col-md-3 dlgts">
+                        <div id="div2611" class="lgts"></div>
+                      </div>
+                      <div class="col-md-5 dlgthz">
+                        <div id="div2612" class="lgthz"></div>
+                      </div>
+                      <div class="col-md-3 dlgts">
+                        <div id="div2613" class="lgts"></div>
+                      </div>
+                    </div>
+                    <div id="div262" class="row">
+                      <div class="col-md-3 dlgtve">
+                        <div id="div2621" class="lgtve"></div>
+                      </div>
+                      <div class="col-md-5 dlgtmp">
+                        <div id="div2622" class="lgtmp"></div>
+                      </div>
+                      <div class="col-md-3 dlgtve">
+                        <div id="div2623" class="lgtve"></div>
+                      </div>
+                    </div>
+                    <div id="div263" class="row">
+                      <div class="col-md-3 dlgts">
+                        <div id="div2631" class="lgts"></div>
+                      </div>
+                      <div class="col-md-5 dlgthz">
+                        <div id="div2632" class="lgthz"></div>
+                      </div>
+                      <div class="col-md-3 dlgts">
+                        <div id="div2633" class="lgts"></div>
+                      </div>
+                    </div>
+                    <div id="div264" class="row">
+                      <div class="col-md-3 dlgtve">
+                        <div id="div2641" class="lgtve "></div>
+                      </div>
+                      <div class="col-md-5 dlgtmp">
+                        <div id="div2642" class="lgtmp "></div>
+                      </div>
+                      <div class="col-md-3 dlgtve">
+                        <div id="div2643" class="lgtve "></div>
+                      </div>
+                    </div>
+                    <div id="div265" class="row">
+                      <div class="col-md-3 dlgts ">
+                        <div id="div2651" class="lgts"></div>
+                      </div>
+                      <div class="col-md-5 dlgthz ">
+                        <div id="div2652" class="lgthz"></div>
+                      </div>
+                      <div class="col-md-3 dlgts ">
+                        <div id="div2653" class="lgts"></div>
+                      </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="row"></div>
+      </div>
+    </section>
+
+    
+  </main>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

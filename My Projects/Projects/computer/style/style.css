@@ -1,0 +1,23 @@
+
+#bodyMain{
+    background-image:  url(../../../pict/calc.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.comBtn{
+    
+}
+
+#calcBody{
+    border: 1px solid blue;
+    background: linear-gradient(to bottom, #0000ff 0%, #003399 100%);
+    border-radius: 10px;
+ 
+}
+
+#calcScrn{
+    color:#ffcc00;
+}

@@ -1,0 +1,97 @@
+
+
+#bodyDiv{
+    background-image: url(../pict/bg/col2.jpg);
+    background-repeat: no-repeat;
+  
+  background-attachment: fixed;
+}
+
+section{
+    height: auto;
+}
+#divS11{
+    height: 250px;
+}
+
+h1{
+    font-size:5vw;
+}
+
+h2{
+    font-size:3vw;
+}
+
+h3{
+    font-size:1vw;
+}
+#sec2{
+    background: linear-gradient(to bottom, #404040 0%, #999999 100%);
+    height: 1000px;
+    z-index: 500;
+}
+
+#sec3{
+    
+    z-index: 500;
+}
+
+#navX{
+    z-index: 1000;
+    
+    
+}
+
+#navbarSupportedContent{
+    background-color: aliceblue;
+}
+
+.divProj{
+    background: linear-gradient(to bottom, #ffffff 0%, #99ccff 100%);
+    height: 500px;
+    transition: 0.5s;
+    border: 2px solid black;
+    border-radius: 10px;
+    
+}
+.divProjpict{
+    background-color: red;
+}
+#sec4{
+    background: linear-gradient(to bottom, #404040 0%, #999999 100%);
+    height: auto;
+    z-index: 500;
+}
+
+.divProj:hover {
+    transform: scale(1.05);  
+    transition: 0.5s;  
+}
+
+.size-card .card{
+    height: 100%;
+}
+
+#uMesg{
+    color: red;
+}
+
+#WuFirstName{
+    color: white;
+    font-size: 15px;
+}
+#WuLastName{
+    color: white;
+    font-size: 15px;
+}
+#WuPhone{
+    color: white;
+    font-size: 15px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    height: 40px;
+}
+

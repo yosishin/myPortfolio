@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="script/scriptver2.js"></script>
+  <link rel="stylesheet" href="style/style.css">
+  <title>BVlack Jack</title>
+</head>
+
+<body>
+  <section>
+    <div class="container">
+      <br>
+      <div id="eler1" class="row text-center border border-danger rounded-lg">
+        <div class="col-md-4 " id="eler1c1">
+          <button id="eler1b1" type="button" onclick="newGame()" class="btn btn-outline-danger">New Game</button>
+          <button id="eler1b2" type="button" onclick="nextMove()" class="btn btn-outline-danger">Next</button>
+          <button id="eler1b2" type="button" onclick="stop()" class="btn btn-outline-danger">Stop</button>
+          <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModal">
+            Help
+          </button>
+        </div>
+        <div class="col-md-8 h2 text-danger" id="eler1c2"></div>
+      </div>
+      <br>
+      <div id="eler2" class="row text-center border border-danger rounded-lg">
+        <div id="eler2c1" class="col-md-2 g-item"></div>
+        <div id="eler2c2" class="col-md-2 g-item"></div>
+        <div id="eler2c3" class="col-md-2 g-item"></div>
+        <div id="eler2c4" class="col-md-2 g-item"></div>
+        <div id="eler2c5" class="col-md-2 g-item"></div>
+        <div id="eler2c6" class="col-md-2 g-item">
+          <div class="row text-center">
+            <h2>Computer</h2>
+          </div>
+          <div class="row text-center">
+              <h2 id="eler2c6h1"></h2>
+            </div>
+
+        </div>
+      </div>
+      <br>
+      <div id="eler3" class="row text-center border border-danger rounded-lg">
+        <div id="eler3c1" class="col-md-2">
+          <div id="eler3c1r1" class="row">
+            <div id="eler3c1rc1" class="col-md-12">
+              
+            </div>
+          </div>
+          <div id="eler3c1r2" class="row">
+            <div id="eler3c1r2c1" class="col-md-12"></div>
+          </div>
+          <div id="eler3c1r3" class="row">
+            <div id="eler3c1r3c1" class="col-md-12">
+              
+            </div>
+          </div>
+        </div>
+        <div id="eler3c2" class="col-md-6">
+          <div id="eler3c2r1" class="row">
+            <div id="eler3c2r1c1" class="col-md-12"></div>
+          </div>
+          <div id="eler3c2r1" class="row">
+            <div id="eler3c2r1c1" class="col-md-12"></div>
+          </div>
+          <div id="eler3c2r1" class="row">
+            <div id="eler3c2r1c1" class="col-md-12"></div>
+          </div>
+        </div>
+        <div id="eler3c5" class="col-md-2">
+          <div id="eler3c5r1" class="row">
+            <div id="eler3c5r1c1" class="col-md-12"></div>
+          </div>
+          <div id="eler3c5r2" class="row">
+            <div id="eler3c5r2c1" class="col-md-12"></div>
+          </div>
+          <div id="eler3c5r3" class="row">
+            <div id="eler3c5r3c1" class="col-md-12">
+            </div>
+          </div>
+
+        </div>
+        <div id="eler3c6" class="col-md-2">
+          <div id="eler3c6r1" class="row">
+            <div id="eler3c6r1c1" class="col-md-12"></div>
+          </div>
+          <div id="eler3c6r2" class="row">
+            <div id="eler3c6r2c1" class="col-md-12"></div>
+          </div>
+          <div id="eler3c6r3" class="row">
+            <div id="eler3c6r3c1" class="col-md-12"></div>
+          </div>
+
+        </div>
+      </div>
+      <br>
+      <div id="eler4" class="row text-center border border-danger rounded-lg">
+        <div id="eler4c1" class="col-md-2 g-item"></div>
+        <div id="eler4c2" class="col-md-2 g-item"></div>
+        <div id="eler4c3" class="col-md-2 g-item"></div>
+        <div id="eler4c4" class="col-md-2 g-item"></div>
+        <div id="eler4c5" class="col-md-2 g-item"></div>
+        <div id="eler4c6" class="col-md-2 g-item">
+          <div class="row text-center">
+            <h2>Player</h2>
+          </div>
+          <div class="row text-center">
+              <h2 id="eler4c6h1"></h2>
+            </div>
+        </div>
+      </div>
+
+
+  </section>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Help</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Press "NEW GAME" to start new round. If you need new card press "NEXT". When you are done, press "STOP" amd now computer is playing. 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
